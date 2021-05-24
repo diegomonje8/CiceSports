@@ -8,24 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		043C67D2265C2A1D008BD55F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C67D1265C2A1D008BD55F /* AppDelegate.swift */; };
-		043C67D4265C2A1D008BD55F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C67D3265C2A1D008BD55F /* SceneDelegate.swift */; };
-		043C67D6265C2A1D008BD55F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C67D5265C2A1D008BD55F /* ViewController.swift */; };
-		043C67D9265C2A1D008BD55F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043C67D7265C2A1D008BD55F /* Main.storyboard */; };
 		043C67DC265C2A1D008BD55F /* CiceSports.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 043C67DA265C2A1D008BD55F /* CiceSports.xcdatamodeld */; };
 		043C67DE265C2A1E008BD55F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043C67DD265C2A1E008BD55F /* Assets.xcassets */; };
 		043C67E1265C2A1E008BD55F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043C67DF265C2A1E008BD55F /* LaunchScreen.storyboard */; };
+		043C67EB265C2AB4008BD55F /* SolashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C67E9265C2AB4008BD55F /* SolashViewController.swift */; };
+		043C67EC265C2AB4008BD55F /* SolashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043C67EA265C2AB4008BD55F /* SolashViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		043C67CE265C2A1D008BD55F /* CiceSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiceSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043C67D1265C2A1D008BD55F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		043C67D3265C2A1D008BD55F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		043C67D5265C2A1D008BD55F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		043C67D8265C2A1D008BD55F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		043C67DB265C2A1D008BD55F /* CiceSports.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CiceSports.xcdatamodel; sourceTree = "<group>"; };
 		043C67DD265C2A1E008BD55F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043C67E0265C2A1E008BD55F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043C67E2265C2A1E008BD55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043C67E9265C2AB4008BD55F /* SolashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolashViewController.swift; sourceTree = "<group>"; };
+		043C67EA265C2AB4008BD55F /* SolashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SolashViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +56,31 @@
 		043C67D0265C2A1D008BD55F /* CiceSports */ = {
 			isa = PBXGroup;
 			children = (
+				043C67E8265C2A97008BD55F /* Modules */,
 				043C67D1265C2A1D008BD55F /* AppDelegate.swift */,
-				043C67D3265C2A1D008BD55F /* SceneDelegate.swift */,
-				043C67D5265C2A1D008BD55F /* ViewController.swift */,
-				043C67D7265C2A1D008BD55F /* Main.storyboard */,
 				043C67DD265C2A1E008BD55F /* Assets.xcassets */,
 				043C67DF265C2A1E008BD55F /* LaunchScreen.storyboard */,
 				043C67E2265C2A1E008BD55F /* Info.plist */,
 				043C67DA265C2A1D008BD55F /* CiceSports.xcdatamodeld */,
 			);
 			path = CiceSports;
+			sourceTree = "<group>";
+		};
+		043C67E8265C2A97008BD55F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				043C67ED265C2ABD008BD55F /* SplashView */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		043C67ED265C2ABD008BD55F /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				043C67E9265C2AB4008BD55F /* SolashViewController.swift */,
+				043C67EA265C2AB4008BD55F /* SolashViewController.xib */,
+			);
+			path = SplashView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +142,7 @@
 			files = (
 				043C67E1265C2A1E008BD55F /* LaunchScreen.storyboard in Resources */,
 				043C67DE265C2A1E008BD55F /* Assets.xcassets in Resources */,
-				043C67D9265C2A1D008BD55F /* Main.storyboard in Resources */,
+				043C67EC265C2AB4008BD55F /* SolashViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,24 +153,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043C67D6265C2A1D008BD55F /* ViewController.swift in Sources */,
 				043C67D2265C2A1D008BD55F /* AppDelegate.swift in Sources */,
+				043C67EB265C2AB4008BD55F /* SolashViewController.swift in Sources */,
 				043C67DC265C2A1D008BD55F /* CiceSports.xcdatamodeld in Sources */,
-				043C67D4265C2A1D008BD55F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		043C67D7265C2A1D008BD55F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				043C67D8265C2A1D008BD55F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		043C67DF265C2A1E008BD55F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
