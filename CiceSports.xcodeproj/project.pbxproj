@@ -13,6 +13,7 @@
 		043C67E1265C2A1E008BD55F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043C67DF265C2A1E008BD55F /* LaunchScreen.storyboard */; };
 		043C67EB265C2AB4008BD55F /* SolashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C67E9265C2AB4008BD55F /* SolashViewController.swift */; };
 		043C67EC265C2AB4008BD55F /* SolashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043C67EA265C2AB4008BD55F /* SolashViewController.xib */; };
+		043C67F0265C3178008BD55F /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C67EF265C3178008BD55F /* AppAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		043C67E2265C2A1E008BD55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043C67E9265C2AB4008BD55F /* SolashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolashViewController.swift; sourceTree = "<group>"; };
 		043C67EA265C2AB4008BD55F /* SolashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SolashViewController.xib; sourceTree = "<group>"; };
+		043C67EF265C3178008BD55F /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		043C67D0265C2A1D008BD55F /* CiceSports */ = {
 			isa = PBXGroup;
 			children = (
+				043C67EE265C3160008BD55F /* Core */,
 				043C67E8265C2A97008BD55F /* Modules */,
 				043C67D1265C2A1D008BD55F /* AppDelegate.swift */,
 				043C67DD265C2A1E008BD55F /* Assets.xcassets */,
@@ -81,6 +84,14 @@
 				043C67EA265C2AB4008BD55F /* SolashViewController.xib */,
 			);
 			path = SplashView;
+			sourceTree = "<group>";
+		};
+		043C67EE265C3160008BD55F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				043C67EF265C3178008BD55F /* AppAssembly.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				043C67D2265C2A1D008BD55F /* AppDelegate.swift in Sources */,
+				043C67F0265C3178008BD55F /* AppAssembly.swift in Sources */,
 				043C67EB265C2AB4008BD55F /* SolashViewController.swift in Sources */,
 				043C67DC265C2A1D008BD55F /* CiceSports.xcdatamodeld in Sources */,
 			);
